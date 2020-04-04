@@ -1,0 +1,104 @@
+@import "variables";
+@import "~hooper/dist/hooper.css";
+@import "~aos/dist/aos.css";
+.app-navigation-open{
+  .navigation-open {
+    transform: translateX(80vw);
+  }
+  .v-application--wrap{
+    overflow: hidden;
+  }
+}
+.section{
+  background-color: lighten($primary-color , 49%)!important;
+  border-radius: 16px !important;
+}
+.hooper-track{
+  padding-left: 0px !important;
+
+}
+.hooper-indicator{
+  border-radius: 100% !important;
+  width: 6px !important;
+  height: 6px !important;
+  margin: 0px 8px !important;
+}
+.my-container{
+  max-width: 90%;
+  width: 90%;
+  margin: auto;
+}
+.price{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.price-sellout{
+  opacity: 0.6;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-decoration: line-through;
+}
+.text-muted{
+  opacity: 0.6;
+}
+
+.page-enter-active {
+  transition: all 250ms;
+}
+.page-leave-active {
+  transition: all 250ms ;
+}
+.page-enter{
+  transform: translateX(-300px);
+  opacity: 0;
+}
+.page-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(300px);
+  opacity: 0;
+}
+.page-enter-to{
+  transform: translateX(0px);
+}
+[class*='col-']{
+  padding: 9px !important;
+}
+.my-grid{
+  column-count: 2;
+  column-gap: 18px;
+  column-span: all;
+  break-after: avoid;
+  break-inside: avoid;
+  .item{
+    break-inside: avoid;
+    break-after: avoid;
+    margin: 18px 0px;
+  }
+}
+.my-footer{
+  position: fixed;
+  left: 0px;
+  bottom: -200px;
+  width: 100vw;
+  transition: all 300ms;
+  z-index: 10000;
+}
+.my-footer-active{
+  bottom: 0px;
+}
+
+
+
+.no-validation{
+  margin-top: 0px !important;
+  .v-messages, .v-text-field__details{
+    display: none !important;
+  }
+}
+.validation-only{
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  .v-input__slot{
+    display: none !important;
+  }
+}

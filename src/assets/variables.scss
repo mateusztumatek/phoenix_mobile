@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,400,700,900&display=swap');
+
+$body-font-family: 'Nunito', sans-serif;
+$primary-color: #836E5D;
+.v-application {
+  font-family: $body-font-family !important;
+  .title { // To pin point specific classes of some components
+    font-family: $body-font-family !important;
+  }
+}
